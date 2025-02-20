@@ -8,7 +8,7 @@ data = gpd.read_file('./rpg-bio-2023-national/rpg-bio-2023-national.shp')
 
 print(data.info())
 
-data = data[data.code_depar.isin(['33', '40'])]
+data = data[data.code_depar.isin(['33'])]
 print(data.head())
 
 
@@ -28,9 +28,9 @@ def get_color(surface):
     return branca.colormap.linear.YlOrRd_09.scale(0, 1)(norm_value)
 
 
-location = [44.28586,2.89696]
+location = [45.31632,-0.66347]
 
-zoom = 8
+zoom = 10
 
 tiles = 'cartodbpositron'
 
